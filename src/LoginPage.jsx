@@ -62,7 +62,7 @@ export default function LoginPage({ onLogin }) {
             alt="Logo"
             className="logo"
           />
-          <h2>Sign in to your account</h2>
+          <h2>Login in to your account</h2>
           <p>
             Or <a href="#">start your free trial</a>
           </p>
