@@ -2,9 +2,9 @@ name: React CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
         run: npm run build
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: react-build
-          path: build/
+        uses: actions/upload-artifact@v4
+    with:
+      name: my-artifact
+      path: ./build
