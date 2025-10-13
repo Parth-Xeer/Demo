@@ -1,4 +1,4 @@
-name: Node.js CI
+name: React CI
 
 on:
   push:
@@ -24,3 +24,12 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Build React App
+        run: npm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: react-build
+          path: build/
